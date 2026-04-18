@@ -1,0 +1,9 @@
+@import url("./base.css");
+
+.product-detail__content,
+.checkout-card,
+.success-card {
+  background:
+    radial-gradient(circle at top right, rgba(214, 162, 94, 0.16), transparent 24%),
+    linear-gradient(135deg, rgba(255, 252, 248, 0.94), rgba(255, 245, 239, 0.84));
+}

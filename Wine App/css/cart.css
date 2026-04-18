@@ -1,0 +1,8 @@
+@import url("./base.css");
+
+.cart-shell,
+.cart-summary {
+  background:
+    radial-gradient(circle at top left, rgba(214, 162, 94, 0.14), transparent 24%),
+    linear-gradient(135deg, rgba(255, 251, 246, 0.92), rgba(255, 245, 238, 0.84));
+}

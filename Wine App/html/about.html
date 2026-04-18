@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#25120f">
+  <title>Wine App | About</title>
+  <meta name="description" content="Learn how Wine App curates bottles and delivers a polished modern storefront experience.">
+  <link rel="canonical" href="about.html">
+  <link rel="stylesheet" href="../css/about.css">
+  <link rel="icon" href="../images/brand-logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <img class="brand__mark" src="../images/brand-logo.svg" alt="Wine App logo">
+          <span>
+            <span class="brand__name">Wine App</span>
+            <span class="brand__tag">About the brand</span>
+          </span>
+        </a>
+        <div class="site-nav__links" data-menu>
+          <a href="../index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a class="active" href="about.html">About</a>
+          <a href="login.html">Login</a>
+        </div>
+        <form class="search" action="shop.html" method="get">
+          <input type="search" name="q" placeholder="Search the collection">
+          <button type="submit">Search</button>
+        </form>
+        <div class="header-actions">
+          <a class="header-link" href="login.html"><span>Account</span><span>Login</span></a>
+          <a class="header-link" href="cart.html"><span>Cart</span><span class="cart-count" data-cart-count>0</span></a>
+          <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero__panel">
+          <div class="about-grid">
+            <div>
+              <span class="eyebrow">Brand story</span>
+              <h1>A structured storefront for a premium catalog.</h1>
+              <p>Wine App focuses on curated selections, premium presentation, and a better browsing experience than the previous fragmented layout.</p>
+            </div>
+            <div class="spotlight">
+              <img src="../images/janosch-diggelmann.jpg" alt="Wine cellar display">
+              <div class="spotlight__body">
+                <h2>Our goal</h2>
+                <p>Make discovery, shopping, and storytelling feel polished from the first screen to the cart.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="info-grid">
+          <article class="panel">
+            <h3>Curated selection</h3>
+            <p>We highlight labels with strong flavor identity, attractive packaging, and gifting potential.</p>
+          </article>
+          <article class="panel">
+            <h3>Premium experience</h3>
+            <p>The new frontend avoids clutter and gives each section room to breathe.</p>
+          </article>
+          <article class="panel">
+            <h3>Fast browsing</h3>
+            <p>Key actions stay visible, and each page now follows one common layout system.</p>
+          </article>
+          <article class="panel">
+            <h3>Ready to scale</h3>
+            <p>Product cards, forms, hero blocks, and footer sections are reusable for future pages.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="story">
+          <div>
+            <h2>What Wine App stands for</h2>
+            <ul class="list">
+              <li>Easy discovery without broken or repeated markup.</li>
+              <li>Visual consistency across homepage, shop, contact, and account pages.</li>
+              <li>A clean custom codebase built only with HTML, CSS, and JavaScript.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>From old structure to clean structure</h3>
+            <p>The previous version had duplicate navigation blocks, encoding issues, and Bootstrap leftovers. The updated build replaces those with semantic sections and one unified design system.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer-strip">
+      <div class="footer-strip__inner">
+        <div class="footer-strip__links">
+          <a href="shop.html">Shop now</a>
+          <a href="contact.html">Contact us</a>
+        </div>
+        <p>Premium identity with cleaner frontend structure</p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <h3>Wine App</h3>
+            <p>Modern storefront design for premium products and better navigation flow.</p>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-title">Explore</h3>
+            <a href="../index.html">Home</a>
+            <a href="cart.html">Cart</a>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-title">Connect</h3>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+            <div class="footer-meta">
+              <p><strong>Email:</strong> info@wineapp.com</p>
+              <p><strong>Support:</strong> +91 12345 67890</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span data-current-year></span> Wine App</p>
+          <p>Custom frontend structure</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../js/catalog.js"></script>
+  <script src="../js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@import url("./base.css");
+
+.auth-card {
+  background:
+    radial-gradient(circle at top right, rgba(124, 38, 52, 0.14), transparent 24%),
+    linear-gradient(135deg, rgba(255, 252, 248, 0.94), rgba(255, 246, 240, 0.84));
+}

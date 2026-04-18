@@ -1,0 +1,11 @@
+@import url("./base.css");
+
+.page-hero__panel {
+  background:
+    radial-gradient(circle at top right, rgba(214, 162, 94, 0.2), transparent 24%),
+    linear-gradient(135deg, rgba(255, 251, 247, 0.92), rgba(255, 244, 235, 0.84));
+}
+
+.filters .chip.active {
+  box-shadow: 0 12px 24px rgba(124, 38, 52, 0.18);
+}

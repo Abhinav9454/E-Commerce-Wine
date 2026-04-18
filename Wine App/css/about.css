@@ -1,0 +1,8 @@
+@import url("./base.css");
+
+.page-hero__panel,
+.story {
+  background:
+    radial-gradient(circle at top left, rgba(124, 38, 52, 0.12), transparent 25%),
+    linear-gradient(135deg, rgba(255, 250, 246, 0.92), rgba(255, 245, 239, 0.84));
+}

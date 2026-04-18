@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#25120f">
+  <title>Wine App | Product</title>
+  <meta name="description" content="Detailed Wine App product page with tasting notes, reviews, and related bottles.">
+  <link rel="canonical" href="product.html">
+  <link rel="stylesheet" href="../css/product.css">
+  <link rel="icon" href="../images/brand-logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <img class="brand__mark" src="../images/brand-logo.svg" alt="Wine App logo">
+          <span>
+            <span class="brand__name">Wine App</span>
+            <span class="brand__tag">Product detail</span>
+          </span>
+        </a>
+        <div class="site-nav__links" data-menu>
+          <a href="../index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="login.html">Login</a>
+        </div>
+        <form class="search" action="shop.html" method="get">
+          <input type="search" name="q" placeholder="Search collection">
+          <button type="submit">Search</button>
+        </form>
+        <div class="header-actions">
+          <a class="header-link" href="login.html"><span>Account</span><span>Login</span></a>
+          <a class="header-link" href="cart.html"><span>Cart</span><span class="cart-count" data-cart-count>0</span></a>
+          <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main data-product-detail></main>
+
+    <div class="footer-strip">
+      <div class="footer-strip__inner">
+        <div class="footer-strip__links">
+          <a href="shop.html">Shop</a>
+          <a href="cart.html">Cart</a>
+          <a href="contact.html">Support</a>
+        </div>
+        <p>Detailed product content built for stronger buying confidence</p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <h3>Wine App</h3>
+            <p>Product details, pairings, and customer-proofed content in one place.</p>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-title">Shop</h3>
+            <a href="shop.html">Collection</a>
+            <a href="checkout.html">Checkout</a>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-title">Support</h3>
+            <a href="contact.html">Contact</a>
+            <a href="../index.html">Home</a>
+            <div class="footer-meta">
+              <p><strong>Email:</strong> info@wineapp.com</p>
+              <p><strong>Support:</strong> +91 12345 67890</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span data-current-year></span> Wine App</p>
+          <p>Product detail flow ready</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/catalog.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/site.js"></script>
+</body>
+</html>

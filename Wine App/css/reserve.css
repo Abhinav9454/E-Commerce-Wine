@@ -1,0 +1,8 @@
+@import url("./base.css");
+
+.page-hero__panel,
+.showcase-card {
+  background:
+    radial-gradient(circle at top left, rgba(214, 162, 94, 0.18), transparent 22%),
+    linear-gradient(135deg, rgba(255, 250, 246, 0.94), rgba(250, 239, 232, 0.86));
+}

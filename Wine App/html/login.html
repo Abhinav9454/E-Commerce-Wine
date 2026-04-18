@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#25120f">
+  <title>Wine App | Login</title>
+  <meta name="description" content="Sign in to Wine App with a cleaner custom account page design.">
+  <link rel="canonical" href="login.html">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="icon" href="../images/brand-logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <img class="brand__mark" src="../images/brand-logo.svg" alt="Wine App logo">
+          <span>
+            <span class="brand__name">Wine App</span>
+            <span class="brand__tag">Member access</span>
+          </span>
+        </a>
+        <div class="site-nav__links" data-menu>
+          <a href="../index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a class="active" href="login.html">Login</a>
+        </div>
+        <form class="search" action="shop.html" method="get">
+          <input type="search" name="q" placeholder="Search wines and gift sets">
+          <button type="submit">Search</button>
+        </form>
+        <div class="header-actions">
+          <a class="header-link" href="login.html"><span>Account</span><span>Login</span></a>
+          <a class="header-link" href="cart.html"><span>Cart</span><span class="cart-count" data-cart-count>0</span></a>
+          <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero__panel">
+          <div class="auth-layout">
+            <div class="auth-card">
+              <span class="eyebrow">Account area</span>
+              <h1>Sign in to your Wine App account.</h1>
+              <p class="section-copy">The login page now uses the same spacing, surfaces, and buttons as the rest of the site for a much more professional flow.</p>
+              <div class="auth-stack">
+                <div class="panel">
+                  <h3>Track orders</h3>
+                  <p>Review previous purchases, delivery progress, and saved items.</p>
+                </div>
+                <div class="panel">
+                  <h3>Save favorites</h3>
+                  <p>Keep your preferred labels close for faster repeat checkout later.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="auth-card">
+              <h1>Login</h1>
+              <form data-demo-form="login" data-status-target="login-status">
+                <div class="form-field">
+                  <label for="login-email">Email address</label>
+                  <input id="login-email" type="email" name="email" required>
+                </div>
+                <div class="form-field">
+                  <label for="login-password">Password</label>
+                  <input id="login-password" type="password" name="password" required>
+                </div>
+                <label class="check-row" for="remember">
+                  <input id="remember" type="checkbox" name="remember">
+                  <span>Keep me signed in on this device</span>
+                </label>
+                <div class="auth-actions">
+                  <button class="button" type="submit">Sign in</button>
+                  <a class="button-secondary" href="contact.html">Need help?</a>
+                </div>
+              </form>
+              <p id="login-status" class="status info">Demo login is active for frontend testing feedback.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer-strip">
+      <div class="footer-strip__inner">
+        <div class="footer-strip__links">
+          <a href="shop.html">Shop now</a>
+          <a href="contact.html">Support</a>
+        </div>
+        <p>Unified account page styling</p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <h3>Wine App</h3>
+            <p>Account screen rebuilt with clear form hierarchy and reusable components.</p>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-title">Explore</h3>
+            <a href="about.html">About</a>
+            <a href="cart.html">Cart</a>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-title">Support</h3>
+            <a href="contact.html">Contact</a>
+            <a href="shop.html">Shop</a>
+            <div class="footer-meta">
+              <p><strong>Email:</strong> info@wineapp.com</p>
+              <p><strong>Support:</strong> +91 12345 67890</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span data-current-year></span> Wine App</p>
+          <p>Frontend auth shell ready</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../js/catalog.js"></script>
+  <script src="../js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#25120f">
+  <title>Wine App | Shop</title>
+  <meta name="description" content="Browse the Wine App collection with category filtering and custom product cards.">
+  <meta property="og:title" content="Wine App | Shop">
+  <meta property="og:description" content="Browse curated bottles, gift-ready sets, and reserve selections.">
+  <link rel="canonical" href="shop.html">
+  <link rel="stylesheet" href="../css/shop.css">
+  <link rel="icon" href="../images/brand-logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html">
+          <img class="brand__mark" src="../images/brand-logo.svg" alt="Wine App logo">
+          <span>
+            <span class="brand__name">Wine App</span>
+            <span class="brand__tag">Cellar shop</span>
+          </span>
+        </a>
+        <div class="site-nav__links" data-menu>
+          <a href="../index.html">Home</a>
+          <a class="active" href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="login.html">Login</a>
+        </div>
+        <form class="search" action="shop.html" method="get">
+          <input type="search" name="q" placeholder="Search red, white, sparkling" data-search-input>
+          <button type="submit">Search</button>
+        </form>
+        <div class="header-actions">
+          <a class="header-link" href="login.html"><span>Account</span><span>Login</span></a>
+          <a class="header-link" href="cart.html"><span>Cart</span><span class="cart-count" data-cart-count>0</span></a>
+          <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>Menu</button>
+        </div>
+      </div>
+    </header>
+
+    <main data-shop>
+      <section class="page-hero">
+        <div class="page-hero__panel">
+          <div class="page-hero__layout">
+            <div>
+              <span class="eyebrow">Storefront grid</span>
+              <h1>Browse the collection with cleaner filters.</h1>
+              <p>Products are now displayed in a consistent card grid with simple category filtering and working cart actions.</p>
+              <div class="pill-row">
+                <span class="pill">Curated catalog</span>
+                <span class="pill">Fast filtering</span>
+                <span class="pill">Cart-ready actions</span>
+              </div>
+            </div>
+            <div class="spotlight">
+              <img src="../images/banners/banner.jpg" alt="Wine collection display">
+              <div class="spotlight__body">
+                <h2 data-results-label>8 products available</h2>
+                <p>Use the chips below to focus on a category, or search directly from the top bar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="results-toolbar">
+          <p>Explore by category or search above for direct matches.</p>
+          <p data-results-label>8 products available</p>
+        </div>
+        <div class="filters">
+          <button class="chip active" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="red">Red</button>
+          <button class="chip" type="button" data-filter="white">White</button>
+          <button class="chip" type="button" data-filter="rose">Rose</button>
+          <button class="chip" type="button" data-filter="sparkling">Sparkling</button>
+          <button class="chip" type="button" data-filter="gift">Gift</button>
+        </div>
+
+        <div class="product-grid" data-shop-grid></div>
+      </section>
+
+      <section class="section">
+        <div class="showcase-grid">
+          <article class="showcase-card">
+            <div class="showcase-card__copy">
+              <span class="eyebrow">Catalog flow</span>
+              <h3>Shopping designed for speed and confidence</h3>
+              <p>Each product card is now cleaner, more balanced, and easier to scan. The page is intentionally structured to reduce clutter and improve purchase momentum.</p>
+            </div>
+            <img src="../images/banners/banner.jpg" alt="Shopping showcase">
+          </article>
+          <div class="showcase-stack">
+            <article class="editorial-card">
+              <span class="eyebrow">Buying guide</span>
+              <h3>How to choose fast</h3>
+              <p class="section-copy">Pick `red` for fuller dinners, `white` for lighter citrus-led pairings, `rose` for easy hosting, and `sparkling` when you need event-ready energy.</p>
+            </article>
+            <article class="editorial-card">
+              <span class="eyebrow">Operations</span>
+              <h3>Catalog structure ready for scale</h3>
+              <p class="section-copy">Products on this page now come from a shared data layer, which makes future backend or CMS integration much cleaner.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3>Want reserve-focused gifting?</h3>
+            <p>Use the `gift` and `sparkling` filters to jump straight to higher-impact presentation products.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Need faster repeat ordering?</h3>
+            <p>The account and cart pages are already aligned with this catalog system, so repeat purchase flows can be integrated next.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Planning a larger storefront?</h3>
+            <p>This structure can support many more products once pagination, search indexing, or backend inventory data is added.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer-strip">
+      <div class="footer-strip__inner">
+        <div class="footer-strip__links">
+          <a href="../index.html">Home</a>
+          <a href="cart.html">Cart</a>
+          <a href="contact.html">Help</a>
+        </div>
+        <p>Simple filtering and reusable custom product cards</p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <h3>Wine App</h3>
+            <p>Premium wine store rebuilt with clean code and structured sections.</p>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-title">Explore</h3>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="product.html?id=p3">Product detail</a>
+            <a href="second.html">Reserve page</a>
+          </div>
+          <div class="footer-links">
+            <h3 class="footer-title">Support</h3>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Help</a>
+            <div class="footer-meta">
+              <p><strong>Email:</strong> info@wineapp.com</p>
+              <p><strong>Support:</strong> +91 12345 67890</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span data-current-year></span> Wine App</p>
+          <p>No Bootstrap dependency</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../js/catalog.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/site.js"></script>
+</body>
+</html>
